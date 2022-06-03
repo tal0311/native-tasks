@@ -1,0 +1,42 @@
+export default [
+  {
+    id: 't101',
+    txt: 'task 1',
+    isDone: false,
+    createdAt: Date.now(),
+    updatedAt: 0,
+    importance: 1,
+  },
+  {
+    id: 't102',
+    txt: 'task 2',
+    isDone: false,
+    createdAt: Date.now(),
+    updatedAt: 0,
+    importance: 2,
+  },
+  {
+    id: 't103',
+    txt: 'task 3',
+    isDone: false,
+    createdAt: Date.now(),
+    updatedAt: 0,
+    importance: 3,
+  },
+  {
+    id: 't104',
+    txt: 'task 4',
+    isDone: false,
+    createdAt: Date.now(),
+    updatedAt: 0,
+    importance: 3,
+  },
+  {
+    id: 't105',
+    txt: 'task 5',
+    isDone: false,
+    createdAt: Date.now(),
+    updatedAt: 0,
+    importance: 3,
+  },
+]
