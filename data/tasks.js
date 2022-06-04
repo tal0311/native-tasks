@@ -5,7 +5,7 @@ export default [
     isDone: false,
     createdAt: Date.now(),
     updatedAt: 0,
-    importance: 1,
+    importance: 'low',
   },
   {
     id: 't102',
@@ -13,7 +13,7 @@ export default [
     isDone: false,
     createdAt: Date.now(),
     updatedAt: 0,
-    importance: 2,
+    importance: 'medium',
   },
   {
     id: 't103',
@@ -21,7 +21,7 @@ export default [
     isDone: false,
     createdAt: Date.now(),
     updatedAt: 0,
-    importance: 3,
+    importance: 'high',
   },
   {
     id: 't104',
@@ -29,7 +29,7 @@ export default [
     isDone: false,
     createdAt: Date.now(),
     updatedAt: 0,
-    importance: 3,
+    importance: 'high',
   },
   {
     id: 't105',
@@ -37,6 +37,6 @@ export default [
     isDone: false,
     createdAt: Date.now(),
     updatedAt: 0,
-    importance: 3,
+    importance: 'high',
   },
 ]

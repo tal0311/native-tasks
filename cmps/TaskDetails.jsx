@@ -1,22 +1,32 @@
 import { useState, useEffect } from 'react'
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  Dimensions,
-  FlatList,
-  TextInput,
-  Button,
-} from 'react-native'
+import { Text, View, Pressable, TextInput } from 'react-native'
 
 import { gStyles } from './../assets/globalStyles'
 
-export const TaskDetails = () => {
-  console.log('task Details')
+export const TaskDetails = ({ task }) => {
+  const [edit, setEdit] = useState(txt)
+  const [isEditable, setIsEditable] = useState(false)
+  const { id, txt, isDone, updatedAt, createdAt, importance } = task
+
+  useEffect(() => {
+    if (task) setEdit(txt)
+  }, [])
+  const handleChange = (value) => {
+    setIsEditable(!isEditable)
+    setEdit(value)
+  }
+
+  const onBack = () => {
+    setIsEditable(!isEditable)
+    console.log('back')
+  }
+
   return (
     <View style={gStyles.taskDetails}>
-      <Text style={{ color: 'blue' }}>task Details</Text>
+      <TextInput value={edit} onChangeText={handleChange} />
+      <Pressable onPress={onBack}>
+        <Text style={gStyles.backBtn}>back</Text>
+      </Pressable>
     </View>
   )
 }
