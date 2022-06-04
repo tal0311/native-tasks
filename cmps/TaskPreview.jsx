@@ -32,10 +32,18 @@ export const TaskPreview = ({ task, removeTask, taskDetails }) => {
 
   if (!task) return <Text>Loading...</Text>
   return (
-    <View>
+    <View style={isDone ? gStyles.isDone : ''}>
       <Pressable onLongPress={(id) => longPress(id)} onPress={handlePress}>
         <View style={gStyles[importance]}>
-          <Text style={gStyles.taskPreview}>{txt}</Text>
+          <Text
+            style={
+              isDone
+                ? [gStyles.taskPreview, gStyles.isDone]
+                : gStyles.taskPreview
+            }
+          >
+            {txt}
+          </Text>
         </View>
       </Pressable>
     </View>
