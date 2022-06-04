@@ -77,6 +77,6 @@ export const gStyles = StyleSheet.create({
     fontSize: 20,
   },
   isDone: {
-    backgroundColor: '#afafaf',
+    backgroundColor: '#c7c7c7c7',
   },
 })
